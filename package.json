@@ -1,0 +1,26 @@
+{
+  "name": "vue-test-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/effus/vue-test-template.git"
+  },
+  "author": "effus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/effus/vue-test-template/issues"
+  },
+  "homepage": "https://github.com/effus/vue-test-template#readme",
+  "devDependencies": {
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {}
+}
