@@ -1,3 +1,6 @@
+//var webpackConfig = require('./webpack.config.js');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+
 module.exports = function (config) {
     config.set({
       //root path location to resolve paths defined in files and exclude
@@ -78,10 +81,18 @@ module.exports = function (config) {
               options: {
                 presets: ['@babel/preset-env']
               }
+            },
+            {
+              test: /\.vue$/,
+              loader: 'vue-loader'
             }
           ]
-        }
+        },
+        plugins: [
+          new VueLoaderPlugin()
+        ]
       },
+      //webpack: webpackConfig,
       preprocessors: {
         //add webpack as preprocessor to support require() in test-suits .js files
         './tests/*.js': ['webpack']

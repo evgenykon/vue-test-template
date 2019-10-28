@@ -1,10 +1,12 @@
 {
   "name": "vue-test-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "test": "karma start --single-run --browsers PhantomJS"
+    "test": "karma start --single-run --browsers PhantomJS",
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -16,10 +18,26 @@
     "url": "https://github.com/effus/vue-test-template/issues"
   },
   "homepage": "https://github.com/effus/vue-test-template#readme",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "@babel/polyfill": "^7.6.0",
+    "vue": "^2.6.10",
     "webpack-karma-jasmine": "^3.0.8"
+  },
+  "dependencies": {
   }
 }

@@ -1,5 +1,9 @@
-# vue-test-template
+# 🚀 Vue test template
+
+This project has been created using **webpack scaffold**, you can now run
 
 ```
-npm run test
+npm run build
 ```
+
+to bundle your application
