@@ -5,7 +5,7 @@ Run tests
 npm run test
 ```
 
-Expectin results:
+Expected results:
 ```
 vue-test-template@1.0.0 test ***
 > karma start --single-run --browsers PhantomJS
